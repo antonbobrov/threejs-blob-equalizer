@@ -65,7 +65,7 @@ void main() {
   float innerCircle = smoothstep(innerRadius * u_step, innerRadius, mainCircle);
   
   float simplexCoordsNoise = snoise(vec3(uv + distorionCircle, time * 0.75));
-  vec2 simplexCoords = uv + simplexCoordsNoise;
+  vec2 simplexCoords = uv + simplexCoordsNoise * (1.0 - vUv.y * u_activeProgress);
   float simplexColor = fbm(vec3(simplexCoords * 2.0, time), 2);
   simplexColor *= 2.0 + (2.0 * u_activeProgress);
 
