@@ -54,8 +54,8 @@ export class Equalizer {
         isFull: { value: false, type: 'boolean' },
         radius: { value: 0.4, type: 'number', min: 0.35, max: 1, step: 0.0001 },
         step: { value: 0.6, type: 'number', min: 0.1, max: 0.75, step: 0.0001 },
-        color1: { value: 0xff0000, type: 'color' },
-        color2: { value: 0x00ff00, type: 'color' },
+        color1: { value: 0x5e9cff, type: 'color' },
+        color2: { value: 0x9e00ff, type: 'color' },
         timeAcceleration: {
           value: 0.15,
           type: 'number',
